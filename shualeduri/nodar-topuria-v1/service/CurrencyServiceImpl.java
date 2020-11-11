@@ -3,12 +3,12 @@ package ge.edu.CurrencyConverter.service;
 public class CurrencyServiceImpl implements CurrencyService {
      private double exchangeRate;
      @Override
-     public void convert(int amount){
-        System.out.println(amount*exchangeRate);
+     public int convert(int amount){
+        return amount*exchangeRate;
      }
      @Override
-     public void convert(double amount){
-        System.out.println(amount*exchangeRate);
+     public double convert(double amount){
+        return amount*exchangeRate;
      }
      @Override
      public void setExchangeRate(double rate){
